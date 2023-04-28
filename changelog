@@ -1,0 +1,94 @@
+All Demo: 
+
+    New Added: 
+        - apps-api-key.html
+        - apps-job-application.html
+        - apps-job-candidate-grid.html
+        - apps-job-candidate-lists.html
+        - apps-job-categories.html
+        - apps-job-companies-lists.html
+        - apps-job-details.html
+        - apps-job-grid-lists.html
+        - apps-job-lists.html
+        - apps-job-new.html
+        - apps-job-statistics.html
+        - job-landing.html
+        - pages-privacy-policy.html
+        - pages-term-conditions.html
+        - dashboard-job.html
+
+    Minor Changes:
+        - advance-ui-scrollspy.html
+        - apps-crm-companies.html
+        - apps-crm-contacts.html
+        - apps-crm-leads.html
+        - apps-crypto-orders.html
+        - apps-ecommerce-customers.html
+        - apps-ecommerce-orders.html
+        - apps-ecommerce-sellers.html
+        - apps-file-manager.html
+        - apps-invoices-list.html
+        - apps-mailbox.html
+        - apps-nft-auction.html
+        - apps-nft-collections.html
+        - apps-nft-creators.html
+        - apps-nft-item-details.html
+        - apps-nft-marketplace.html
+        - apps-nft-ranking.html
+        - apps-tasks-list-view.html
+        - apps-tickets-list.html
+        - apps-todo.html
+        - auth-offline.html
+        - dashboard-nft.html
+        - forms-file-uploads.html
+        - forms-wizard.html
+        - forms-select2.html
+        - landing.html
+        - nft-landing.html
+        - partials\sidebar.html
+        - partials\topbar.html
+        - ui-modals.html
+        - widgets.html
+        - charts-apex-area.html
+        - charts-apex-candlestick.html
+
+Minimal Demo 
+    - index.html
+    - partials\customizer.html
+    - tables-basic.html
+    - tables-datatables.html
+    - ui-typography.html
+
+Material Demo 
+    - apps-chat.html
+    - apps-crypto-kyc.html
+    - auth-pass-change-basic.html
+    - auth-pass-change-cover.html
+    - auth-signin-cover.html
+    - auth-signup-basic.html
+    - auth-signup-cover.html
+    - index.html
+    - tables-basic.html
+    - tables-datatables.html
+    - ui-typography.html
+
+saas Demo
+    - advance-ui-animation.html
+    - apps-crypto-kyc.html
+
+modern
+    - apps-crypto-kyc.html
+
+interactive
+    - apps-crypto-kyc.html
+
+creative Demo
+    - advance-ui-animation.html
+    - apps-crypto-kyc.html
+    - forms-wizard.html
+    - index.html
+    - tables-datatables.html
+
+galaxy Demo
+    - apps-crypto-kyc.html
+    - ui-typography.html
