@@ -1,0 +1,376 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Initiate Request"})
+
+    <!-- plugin css -->
+    <link href="assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+
+    @@include("partials/head-css.html")
+
+</head>
+
+<body data-topbar="light" data-layout="horizontal">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        @@include("partials/menu.html")
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    @@include("partials/page-title.html", {"pagetitle": "Initiate Request", "title": "Initiate Request"})
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0">Initiator Details</h4>
+                                </div><!-- end card header -->
+                                <div class="card-body">
+
+                                    <div class="row g-4">
+                                        <div class="col-xxl-4 col-md-6">
+                                            <p class="text-muted mb-1 text-uppercase fw-medium fs-14">Name of logged in user</p>
+                                            <h5 class="fs-16 mb-0">Fida Hussain</h5>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-xxl-4 col-md-6">
+                                            <p class="text-muted mb-1 text-uppercase fw-medium fs-14">Department name of logged in user</p>
+                                            <h5 class="fs-16 mb-0">Operations</h5>
+                                        </div>
+                                        <!--end col-->
+
+                                        <div class="col-xxl-4 col-md-6">
+                                            <p class="text-muted mb-1 text-uppercase fw-medium fs-14">Employee number of logged in user</p>
+                                            <h5 class="fs-16 mb-0">123</h5>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0">Project Summary</h4>
+                                </div><!-- end card header -->
+                                <div class="card-body">
+                                    <div class="row gy-4">
+                                        <div class="col-xxl-3 col-md-6">
+                                            <div>
+                                                <label for="ProjectTitle" class="form-label">Project Title</label>
+                                                <input type="password" class="form-control" id="ProjectTitle">
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-xxl-3 col-md-6">
+                                            <div>
+                                                <label for="RequiredFinishDate" class="form-label">Required Finish Date</label>
+                                                <input type="date" class="form-control" id="RequiredFinishDate">
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-xxl-3 col-md-6">
+                                            <div>
+                                                <label for="Area" class="form-label">Area</label>
+                                                <select class="form-select mb-3" data-choices name="choices-single-default" id="choices-single-default">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-xxl-3 col-md-6">
+
+                                            <div>
+                                                <label for="Project" class="form-label">Project</label>
+                                                <select class="form-select mb-3" data-choices name="choices-single-default" id="choices-single-default">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-xxl-3 col-md-6">
+                                            <div>
+                                                <label for="readonlyPlaintext" class="form-label">Readonly Plain Text Input</label>
+                                                <div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="ReadonlyPlain" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="ReadonlyPlain" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-xxl-3 col-md-6">
+                                            <div>
+                                                <label for="ActionRequired" class="form-label">Action Required</label>
+                                                <select class="form-select mb-3" data-choices name="choices-single-default" id="choices-single-default">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-xxl-3 col-md-6">
+                                            <div>
+                                                <label for="ActionRequired" class="form-label">Executing Department</label>
+                                                <select class="form-select mb-3" data-choices name="choices-single-default" id="choices-single-default">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-xxl-3 col-md-6">
+                                            <div>
+                                                <label for="ActionRequired" class="form-label">Business Drivers</label>
+                                                <select class="form-select mb-3" data-choices name="choices-single-default" id="choices-single-default">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+
+                                    </div>
+                                    <!--end row-->
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Nav tabs -->
+
+                            <ul class="nav nav-pills nav-customs nav-danger d-md-flex flex-md-nowrap overflow-auto text-nowrap" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#navs-request-details" role="tab">Request Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#navs-assessment" role="tab">Risk Assessment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#navs-modification" role="tab">Modification</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#navs-replacement" role="tab">Replacement</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#navs-improvement" role="tab">Process Improvement</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#navs-evaluation" role="tab">HSE Evaluation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#navs-capex-budget" role="tab">Capex Budget</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#navs-planned-cashflow" role="tab">Planned Cashflow</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#navs-cost-element" role="tab">Cost Element</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#navs-cost-project-date" role="tab">Project Date</a>
+                                </li>
+                            </ul><!-- Tab panes -->
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="tab-content text-muted">
+                                        <!-- Request Details -->
+                                        <div class="tab-pane active" id="navs-request-details" role="tabpanel">
+                                            <div class="row gy-4">
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label for="exampleFormControlTextarea5" class="form-label">Request Description</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label for="exampleFormControlTextarea5" class="form-label">Justification and Consequences</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div>
+                                                        <label for="readonlyPlaintext" class="form-label">File Type:</label>
+                                                        <div>
+                                                            <div class="form-check mb-2 form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                                <label class="form-check-label" for="formCheck1">
+                                                                    P&ID
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check mb-2 form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="formCheck2">
+                                                                <label class="form-check-label" for="formCheck1">
+                                                                    Technical Document
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check mb-2 form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="formCheck3">
+                                                                <label class="form-check-label" for="formCheck1">
+                                                                    Offers / Quotations
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check mb-2 form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="formCheck4">
+                                                                <label class="form-check-label" for="formCheck1">
+                                                                    Drawings / Layout
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check mb-2 form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="formCheck5">
+                                                                <label class="form-check-label" for="formCheck1">
+                                                                    Others
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label for="formFile" class="form-label">Upload Attachment</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Risk Assessment -->
+                                        <div class="tab-pane" id="navs-assessment" role="tabpanel">
+                                            Risk Assessmen
+                                        </div>
+
+                                        <!-- Modification -->
+                                        <div class="tab-pane" id="navs-modification" role="tabpanel">
+                                            Modification
+                                        </div>
+
+                                        <!-- Replacement -->
+                                        <div class="tab-pane" id="navs-replacement" role="tabpanel">
+                                            Replacement
+                                        </div>
+
+                                        <!-- Process Improvement -->
+                                        <div class="tab-pane" id="navs-improvement" role="tabpanel">
+                                            Process Improvement
+                                        </div>
+
+                                        <!-- HSE Evaluation -->
+                                        <div class="tab-pane" id="navs-evaluation" role="tabpanel">
+                                            HSE Evaluation
+                                        </div>
+
+                                        <!-- Capex Budget -->
+                                        <div class="tab-pane" id="navs-capex-budget" role="tabpanel">
+                                            Capex Budget
+                                        </div>
+
+                                        <!-- Planned Cashflow -->
+                                        <div class="tab-pane" id="navs-planned-cashflow" role="tabpanel">
+                                            Planned Cashflow
+                                        </div>
+
+                                        <!-- Cost Element -->
+                                        <div class="tab-pane" id="navs-cost-element" role="tabpanel">
+                                            Cost Element
+                                        </div>
+
+                                        <!-- Project Date -->
+                                        <div class="tab-pane" id="navs-project-date" role="tabpanel">
+                                            Project Date
+                                        </div>
+
+                                    </div>
+                                </div><!-- end card-body -->
+                            </div><!-- end card -->
+
+
+                        </div>
+                    </div>
+                    <!--end col-->
+
+                    <div class="row mt-2 justify-content-end">
+                        <div class="col-auto">
+                            <a href="#" class="btn btn-primary w-100">Submit</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="btn btn-soft-primary w-100">Re-Submit</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="btn btn-soft-dark w-100">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+    </div>
+    <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+    @@include("partials/vendor-scripts.html")
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Vector map-->
+    <script src="assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="assets/libs/jsvectormap/maps/world-merc.js"></script>
+
+    <!-- Dashboard init -->
+    <script src="assets/js/pages/dashboard.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
