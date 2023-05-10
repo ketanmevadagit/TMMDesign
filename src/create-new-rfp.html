@@ -31,33 +31,36 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title mb-0">Initiator Details</h4>
+                                <div class="card-header border-primary bg-primary bg-opacity-10">
+                                    <h4 class="card-title mb-0 text-primary">Initiator Details</h4>
                                 </div><!-- end card header -->
                                 <div class="card-body">
 
                                     <div class="row g-4">
                                         <div class="col-xxl-4 col-md-6">
-                                            <p class="text-muted mb-1 text-uppercase fw-medium fs-14">Name of logged in user</p>
-                                            <h5 class="fs-16 mb-0">Fida Hussain</h5>
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="Name" value="Fida Hussain" disabled>
+                                                <label for="Name" class="form-label text-primary">Name of logged in user</label>
+                                            </div>
                                         </div>
                                         <!--end col-->
                                         <div class="col-xxl-4 col-md-6">
-                                            <p class="text-muted mb-1 text-uppercase fw-medium fs-14">Department name of logged in user</p>
-                                            <h5 class="fs-16 mb-0">Operations</h5>
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="Operations" value="Operations" disabled>
+                                                <label for="Operations" class="form-label text-primary">Department name of logged in user</label>
+                                            </div>
                                         </div>
                                         <!--end col-->
 
                                         <div class="col-xxl-4 col-md-6">
-                                            <p class="text-muted mb-1 text-uppercase fw-medium fs-14">Employee number of logged in user</p>
-                                            <h5 class="fs-16 mb-0">123</h5>
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="EmployeeNumber" value="123" disabled>
+                                                <label for="EmployeeNumber" class="form-label text-primary">Employee number of logged in user</label>
+                                            </div>
                                         </div>
                                         <!--end col-->
                                     </div>
-
                                 </div>
-
-
                             </div>
                         </div>
                         <!--end col-->
@@ -67,105 +70,107 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title mb-0">Project Summary</h4>
+                                <div class="card-header border-primary bg-primary bg-opacity-10">
+                                    <h4 class="card-title mb-0 text-primary">Project Summary</h4>
                                 </div><!-- end card header -->
                                 <div class="card-body">
-                                    <div class="row gy-4">
-                                        <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="ProjectTitle" class="form-label">Project Title</label>
-                                                <input type="password" class="form-control" id="ProjectTitle">
+                                    <form action="#">
+                                        <div class="row gy-4">
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="ProjectTitle" placeholder="Project Title">
+                                                    <label for="ProjectTitle" class="form-label text-primary">Project Title</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="RequiredFinishDate" class="form-label">Required Finish Date</label>
-                                                <input type="date" class="form-control" id="RequiredFinishDate">
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="date" class="form-control" id="RequiredFinishDate">
+                                                    <label for="RequiredFinishDate" class="form-label text-primary">Required Finish Date</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="Area" class="form-label">Area</label>
-                                                <select class="form-select mb-3" data-choices name="choices-single-default" id="choices-single-default">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div class="form-floating">
+                                                    <select class="form-select" name="choices-single-default" id="choices-single-default">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="Area" class="form-label text-primary">choices-single-default</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-xxl-3 col-md-6">
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
 
-                                            <div>
-                                                <label for="Project" class="form-label">Project</label>
-                                                <select class="form-select mb-3" data-choices name="choices-single-default" id="choices-single-default">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
+                                                <div class="form-floating">
+                                                    <select class="form-select" name="choices-project" id="choices-project">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="choices-project" class="form-label text-primary">Project</label>
+                                                </div>
 
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="readonlyPlaintext" class="form-label">Readonly Plain Text Input</label>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
                                                 <div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="ReadonlyPlain" id="inlineRadio1" value="option1">
-                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="ReadonlyPlain" id="inlineRadio2" value="option2">
-                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                    <label for="readonlyPlaintext" class="form-label text-primary">Readonly Plain Text Input</label>
+                                                    <div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="ReadonlyPlain" id="inlineRadio1" value="option1">
+                                                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="ReadonlyPlain" id="inlineRadio2" value="option2">
+                                                            <label class="form-check-label" for="inlineRadio2">No</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="ActionRequired" class="form-label">Action Required</label>
-                                                <select class="form-select mb-3" data-choices name="choices-single-default" id="choices-single-default">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div class="form-floating">
+                                                    <select class="form-select mb-3" name="choices-single-default" id="ActionRequired">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="ActionRequired" class="form-label text-primary">Action Required</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="ActionRequired" class="form-label">Executing Department</label>
-                                                <select class="form-select mb-3" data-choices name="choices-single-default" id="choices-single-default">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div class="form-floating">
+                                                    <select class="form-select mb-3" name="choices-single-default" id="ExecutingDepartment">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="ExecutingDepartment" class="form-label text-primary">Executing Department</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-xxl-3 col-md-6">
-                                            <div>
-                                                <label for="ActionRequired" class="form-label">Business Drivers</label>
-                                                <select class="form-select mb-3" data-choices name="choices-single-default" id="choices-single-default">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
+                                            <!--end col-->
+                                            <div class="col-xxl-3 col-md-6">
+                                                <div class="form-floating">
+                                                    <select class="form-select mb-3" name="choices-single-default" id="BusinessDrivers">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="BusinessDrivers" class="form-label text-primary">Business Drivers</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!--end col-->
+                                            <!--end col-->
 
-                                    </div>
+                                        </div>
+                                    </form>
                                     <!--end row-->
                                 </div>
 
@@ -178,8 +183,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <!-- Nav tabs -->
-
-                            <ul class="nav nav-pills nav-customs nav-danger d-md-flex flex-md-nowrap overflow-auto text-nowrap" role="tablist">
+                            <!-- d-md-flex flex-md-nowrap overflow-auto text-nowrap -->
+                            <ul class="nav nav-pills nav-customs nav-danger" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-bs-toggle="tab" href="#navs-request-details" role="tab">Request Details</a>
                                 </li>
@@ -219,48 +224,49 @@
                                         <div class="tab-pane active" id="navs-request-details" role="tabpanel">
                                             <div class="row gy-4">
                                                 <div class="col-md-6">
-                                                    <div>
-                                                        <label for="exampleFormControlTextarea5" class="form-label">Request Description</label>
+                                                    <div class="form-floating">
                                                         <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                                                        <label for="exampleFormControlTextarea5" class="form-label text-primary">Request Description</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div>
-                                                        <label for="exampleFormControlTextarea5" class="form-label">Justification and Consequences</label>
+                                                    <div class="form-floating">
                                                         <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                                                        <label for="exampleFormControlTextarea5" class="form-label text-primary">Justification and Consequences</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div>
-                                                        <label for="readonlyPlaintext" class="form-label">File Type:</label>
+                                                        <h4 class="fs-18 text-primary mb-3">File Type:</h4>
+
                                                         <div>
                                                             <div class="form-check mb-2 form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="formCheck1">
-                                                                <label class="form-check-label" for="formCheck1">
+                                                                <input class="form-check-input" type="checkbox" id="formCheck01">
+                                                                <label class="form-check-label" for="formCheck01">
                                                                     P&ID
                                                                 </label>
                                                             </div>
                                                             <div class="form-check mb-2 form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="formCheck2">
-                                                                <label class="form-check-label" for="formCheck1">
+                                                                <input class="form-check-input" type="checkbox" id="formCheck02">
+                                                                <label class="form-check-label" for="formCheck02">
                                                                     Technical Document
                                                                 </label>
                                                             </div>
                                                             <div class="form-check mb-2 form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="formCheck3">
-                                                                <label class="form-check-label" for="formCheck1">
+                                                                <input class="form-check-input" type="checkbox" id="formCheck03">
+                                                                <label class="form-check-label" for="formCheck03">
                                                                     Offers / Quotations
                                                                 </label>
                                                             </div>
                                                             <div class="form-check mb-2 form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="formCheck4">
-                                                                <label class="form-check-label" for="formCheck1">
+                                                                <input class="form-check-input" type="checkbox" id="formCheck04">
+                                                                <label class="form-check-label" for="formCheck04">
                                                                     Drawings / Layout
                                                                 </label>
                                                             </div>
                                                             <div class="form-check mb-2 form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="formCheck5">
-                                                                <label class="form-check-label" for="formCheck1">
+                                                                <input class="form-check-input" type="checkbox" id="formCheck05">
+                                                                <label class="form-check-label" for="formCheck05">
                                                                     Others
                                                                 </label>
                                                             </div>
@@ -269,57 +275,490 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div>
-                                                        <label for="formFile" class="form-label">Upload Attachment</label>
+                                                        <label for="formFile" class="form-labe text-primary">Upload Attachment</label>
                                                         <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Risk Assessment -->
+                                        <div class="tab-pane" id="navs-assessment" role="tabpanel">
+                                            <div class="row gy-4">
+                                                <div class="col-md-12">
+                                                    <div class="d-flex align-items-center">
+                                                        <label class="form-label text-primary pe-3 mb-0">Download Reference Document C-EC-PM-PO-001-A11</label>
+                                                        <button type="button" class="btn btn-primary">
+                                                            <span class="icon-off"><i class="ri-download-2-fill align-bottom me-1"></i> Download</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="RiskAssessment" placeholder="Type here">
+                                                        <label for="RiskAssessment" class="form-label text-primary">Risk Assessment (Consequences x Likelyhood)</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="Corresponding" placeholder="Type here">
+                                                        <label for="Corresponding" class="form-label text-primary">Corresponding Risk Level</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label for="formFile" class="form-labe text-primary">Upload Attachment</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modification -->
+                                        <div class="tab-pane" id="navs-modification" role="tabpanel">
+                                            <div class="row gy-4">
+                                                <div class="col-md-12">
+                                                    <div class="form-floating mb-4">
+                                                        <textarea class="form-control" id="Impacts" rows="3"></textarea>
+                                                        <label for="Impacts" class="form-label text-primary">Impacts of Modification</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <h4 class="fs-18 text-primary mb-3">Documents required to be updated upon completion of the project.</h4>
+                                            <div class="row gy-4">
+                                                <div class="col-xxl-3 col-md-6">
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck1">
+                                                        <label class="form-check-label" for="formCheck1">
+                                                            P&ID
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck2">
+                                                        <label class="form-check-label" for="formCheck2">
+                                                            Isometric
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck3">
+                                                        <label class="form-check-label" for="formCheck3">
+                                                            3D Model
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xxl-3 col-md-6">
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck4">
+                                                        <label class="form-check-label" for="formCheck4">
+                                                            TDS
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck5">
+                                                        <label class="form-check-label" for="formCheck5">
+                                                            MSDS
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck6">
+                                                        <label class="form-check-label" for="formCheck6">
+                                                            Facility Layout
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xxl-3 col-md-6">
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck7">
+                                                        <label class="form-check-label" for="formCheck7">
+                                                            I&C Documents
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck8">
+                                                        <label class="form-check-label" for="formCheck8">
+                                                            Electrical Documents
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck9">
+                                                        <label class="form-check-label" for="formCheck9">
+                                                            Mechanical Documents
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-3 col-md-6">
+                                                    <div class="form-check mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="formCheck10">
+                                                        <label class="form-check-label" for="formCheck10">
+                                                            Others
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Replacement -->
+                                        <div class="tab-pane" id="navs-replacement" role="tabpanel">
+                                            <div class="row gy-4">
+                                                <div class="col-xxl-3 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="ItemDescription" placeholder="Type here">
+                                                        <label for="ItemDescription" class="form-label text-primary">Item Description</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-3 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="Manufacturer" placeholder="Type here">
+                                                        <label for="Manufacturer" class="form-label text-primary">Manufacturer</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-3 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="Model" placeholder="Type here">
+                                                        <label for="Model" class="form-label text-primary">Model/Part No.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xxl-3 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="ReplacementDate">
+                                                        <label for="ReplacementDate" class="form-label text-primary">Last Replacement Date</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div>
+                                                        <h4 class="fs-18 text-primary mb-3">Replacement Reason</h4>
+
+                                                        <div>
+                                                            <div class="form-check mb-2 form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="Issues">
+                                                                <label class="form-check-label" for="Issues">
+                                                                    O&M Issues
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check mb-2 form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="Lifetime">
+                                                                <label class="form-check-label" for="Lifetime">
+                                                                    Lifetime is over
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check mb-2 form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="Damaged">
+                                                                <label class="form-check-label" for="Damaged">
+                                                                    Damaged
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check mb-2 form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="Others">
+                                                                <label class="form-check-label" for="Others">
+                                                                    Others
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                                                        <label for="exampleFormControlTextarea5" class="form-label text-primary">Request Description</label>
                                                     </div>
                                                 </div>
                                             </div>
 
                                         </div>
 
-                                        <!-- Risk Assessment -->
-                                        <div class="tab-pane" id="navs-assessment" role="tabpanel">
-                                            Risk Assessmen
-                                        </div>
-
-                                        <!-- Modification -->
-                                        <div class="tab-pane" id="navs-modification" role="tabpanel">
-                                            Modification
-                                        </div>
-
-                                        <!-- Replacement -->
-                                        <div class="tab-pane" id="navs-replacement" role="tabpanel">
-                                            Replacement
-                                        </div>
-
                                         <!-- Process Improvement -->
                                         <div class="tab-pane" id="navs-improvement" role="tabpanel">
-                                            Process Improvement
+                                            <div class="row gy-4">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="Evaluation" rows="3"></textarea>
+                                                        <label for="Evaluation" class="form-label text-primary">Evaluation</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="Recomendation" rows="3"></textarea>
+                                                        <label for="Recomendation" class="form-label text-primary">Recomendation</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label for="formFile" class="form-labe text-primary">Upload Attachment</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <!-- HSE Evaluation -->
                                         <div class="tab-pane" id="navs-evaluation" role="tabpanel">
-                                            HSE Evaluation
+                                            <div class="row gy-4">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="Assesment" rows="3"></textarea>
+                                                        <label for="Assesment" class="form-label text-primary">Assesment</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="Recomendation" disabled rows="3"></textarea>
+                                                        <label for="Recomendation" class="form-label text-primary">Recomendation</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label for="formFile" class="form-labe text-primary">Upload Attachment</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <!-- Capex Budget -->
                                         <div class="tab-pane" id="navs-capex-budget" role="tabpanel">
-                                            Capex Budget
+                                            <div class="row gy-4">
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="EstimatedCostKD" placeholder="Type here">
+                                                        <label for="EstimatedCostKD" class="form-label text-primary">Estimated Cost in KD:</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" name="choices-single-default" id="choices-single-default">
+                                                            <option selected="">Open this select menu</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <label for="ExpectedPaymentCurrency" class="form-label text-primary">Expected Payment Currency</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="EstimatedCostPayment" placeholder="Type here">
+                                                        <label for="EstimatedCostPaymen" class="form-label text-primary">Estimated Cost (Payment Currency)</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="Conversion" placeholder="Type here">
+                                                        <label for="Conversion" class="form-label text-primary">Conversion Factor</label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <!-- Planned Cashflow -->
                                         <div class="tab-pane" id="navs-planned-cashflow" role="tabpanel">
-                                            Planned Cashflow
+                                            <div class="row gy-4 mb-3">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="Amount" placeholder="Type here">
+                                                        <label for="Amount" class="form-label text-primary">Amount</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="ExpectedDate">
+                                                        <label for="ExpectedDate" class="form-label text-primary">Expected Date</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-auto">
+                                                    <button type="button" class="btn  btn-lg btn-danger">
+                                                        <span class="icon-off"><i class="ri-delete-bin-line align-bottom"></i></span>
+                                                    </button>
+                                                    <button type="button" class="btn  btn-lg btn-primary">
+                                                        <span class="icon-off"><i class="ri-save-line align-bottom"></i></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row gy-4 mb-3">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="Amount" placeholder="Type here">
+                                                        <label for="Amount" class="form-label text-primary">Amount</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="ExpectedDate">
+                                                        <label for="ExpectedDate" class="form-label text-primary">Expected Date</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-auto">
+                                                    <button type="button" class="btn  btn-lg btn-danger">
+                                                        <span class="icon-off"><i class="ri-delete-bin-line align-bottom"></i></span>
+                                                    </button>
+                                                    <button type="button" class="btn  btn-lg btn-primary">
+                                                        <span class="icon-off"><i class="ri-save-line align-bottom"></i></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row gy-4 mb-3">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="Amount" placeholder="Type here">
+                                                        <label for="Amount" class="form-label text-primary">Amount</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="ExpectedDate">
+                                                        <label for="ExpectedDate" class="form-label text-primary">Expected Date</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-auto">
+                                                    <button type="button" class="btn  btn-lg btn-danger">
+                                                        <span class="icon-off"><i class="ri-delete-bin-line align-bottom"></i></span>
+                                                    </button>
+                                                    <button type="button" class="btn  btn-lg btn-primary">
+                                                        <span class="icon-off"><i class=" ri-save-line align-bottom"></i></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-primary">
+                                                <span class="icon-off"><i class="ri-add-fill align-bottom me-1"></i>Add</span>
+                                            </button>
                                         </div>
 
                                         <!-- Cost Element -->
                                         <div class="tab-pane" id="navs-cost-element" role="tabpanel">
-                                            Cost Element
+                                            <table class="table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Cost Elements</th>
+                                                        <th scope="col">Brief Description</th>
+                                                        <th scope="col">Estimated Budget (KD)</th>
+                                                        <th scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Material</th>
+                                                        <td>Implement new UX</td>
+                                                        <td>1,000</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="ri-more-2-fill"></i>
+                                                                </a>
+
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Construction and Services</th>
+                                                        <td>Implement new UX</td>
+                                                        <td>2,000</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="ri-more-2-fill"></i>
+                                                                </a>
+
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Consultancy (if applicable)</th>
+                                                        <td>Implement new UX</td>
+                                                        <td>5,000</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="ri-more-2-fill"></i>
+                                                                </a>
+
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Travel Expenses (if applicable)</th>
+                                                        <td>Implement new UX</td>
+                                                        <td>1,000</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="ri-more-2-fill"></i>
+                                                                </a>
+
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Contingency (10%)</th>
+                                                        <td>Implement new UX</td>
+                                                        <td>500</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="ri-more-2-fill"></i>
+                                                                </a>
+
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                            <div class="row gy-4">
+                                                <div class="col-md-6">
+                                                    <div>
+                                                        <label for="formFile" class="form-labe text-primary">Upload Attachment</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <!-- Project Date -->
-                                        <div class="tab-pane" id="navs-project-date" role="tabpanel">
-                                            Project Date
+                                        <div class="tab-pane" id="navs-cost-project-date" role="tabpanel">
+                                            <div class="row gy-4">
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="PlannedProjectDate">
+                                                        <label for="PlannedProjectDate" class="form-label text-primary">Planned Project Date</label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -333,10 +772,10 @@
 
                     <div class="row mt-2 justify-content-end">
                         <div class="col-auto">
-                            <a href="#" class="btn btn-primary w-100">Submit</a>
+                            <a href="#" class="btn btn-primary w-100">Approve</a>
                         </div>
                         <div class="col-auto">
-                            <a href="#" class="btn btn-soft-primary w-100">Re-Submit</a>
+                            <a href="#" class="btn btn-soft-primary w-100">Reject </a>
                         </div>
                         <div class="col-auto">
                             <a href="#" class="btn btn-soft-dark w-100">Cancel</a>
