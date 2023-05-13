@@ -568,8 +568,8 @@ $value in $theme-colors {
             &.active,
             &.active:before,
             &.active:after {
-                background-color: $primary;
-                color: $white;
+                background-color: $white;
+                color: $primary;
             }
 
             &.active {
