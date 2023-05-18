@@ -537,7 +537,7 @@ $value in $theme-colors {
             position: relative;
             display: block;
             float: right;
-            background-color: var(--#{$prefix}body-bg);
+            background-color: $white;
             margin-right: 46px;
             transition: all 0.5s ease;
 
@@ -549,7 +549,7 @@ $value in $theme-colors {
                 top: -1px;
                 bottom: 1px;
                 width: 37px;
-                background-color: var(--#{$prefix}body-bg);
+                background-color: $white;
                 transition: all 0.5s ease;
             }
 
@@ -568,8 +568,8 @@ $value in $theme-colors {
             &.active,
             &.active:before,
             &.active:after {
-                background-color: $white;
-                color: $primary;
+                background-color: $primary;
+                color: $white;
             }
 
             &.active {

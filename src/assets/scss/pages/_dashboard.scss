@@ -1,8 +1,11 @@
 // 
 // _dashboard.scss
 // 
+.min-w-124 {
+    min-width: 123px;
+}
 
-.sales-history{
+.sales-history {
     padding: 10px 0;
 }
 
@@ -10,7 +13,7 @@
     padding: 10px 0;
 }
 
-.dash-widget{
+.dash-widget {
     width: 85px;
 }
 
@@ -21,13 +24,14 @@
 .dash-mini {
     .mini-widget {
         border-right: 1px solid $border-color;
+
         &:last-child {
             border: 0px;
         }
+
         @media (max-width: 768px) {
             border-right: 0px;
             border-bottom: 1px solid $border-color;
         }
     }
-}   
-
+}
