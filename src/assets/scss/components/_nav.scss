@@ -546,8 +546,8 @@ $value in $theme-colors {
                 display: block;
                 content: " ";
                 position: absolute;
-                top: -1px;
-                bottom: 1px;
+                top: 0px;
+                bottom: 0px;
                 width: 37px;
                 background-color: $white;
                 transition: all 0.5s ease;

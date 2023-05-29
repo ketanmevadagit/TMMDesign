@@ -23,13 +23,14 @@
             <div class="page-content">
                 <div class="container-fluid">
 
-                    @@include("partials/page-title.html", {"pagetitle": "Re Allocation", "title": "Re Allocation"})
+                    @@include("partials/page-title.html", {"pagetitle": "Post Implementation Review", "title": "Post Implementation Review"})
 
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card">
-                                <div class="card-header border-primary bg-primary bg-opacity-10">
-                                    <h4 class="card-title mb-0 text-primary">Owner Details</h4>
+                                <div class="card-header d-md-flex justify-content-between border-primary bg-primary bg-opacity-10">
+                                    <h3 class="card-title mb-2 mb-md-0 text-primary">Initiator Details</h3>
+                                    <h5 class="fs-14 mb-0 text-primary">RFP # PD-20230510-001</h5>
                                 </div><!-- end card header -->
                                 <div class="card-body">
                                     <div class="row g-4">
@@ -57,12 +58,14 @@
                                         <!--end col-->
 
                                         <div class="col-md-6">
-                                            <div class="form-floating">
-                                                <select class="form-select" name="choices-single-default" id="Area">
-                                                    <option selected>select Area (will only show Areas as per selected Dept)</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
+                                            <div class="form-floating custom-select-floating">
+                                                <select class="form-control" id="choices-multiple-default" name="choices-multiple-default" data-placeholder="Select City"
+                                                    data-choices multiple data-choices-removeItem>
+
+                                                    <option value="Choice 1" selected>Choice 1</option>
+                                                    <option value="Choice 2">Choice 2</option>
+                                                    <option value="Choice 3">Choice 3</option>
+                                                    <option value="Choice 4">Choice 4</option>
                                                 </select>
                                                 <label for="Area" class="form-label text-primary">Area</label>
                                             </div>
@@ -72,7 +75,7 @@
                                         <div class="col-md-6">
                                             <div class="form-floating">
                                                 <input type="date" class="form-control" value=" 01/18/2023" id="Capex">
-                                                <label for="Capex" class="form-label text-primary">Capex Year:</label>
+                                                <label for="Capex" class="form-label text-primary">Financial Year</label>
                                             </div>
                                         </div>
                                         <!--end col-->
@@ -94,12 +97,13 @@
                                     <form action="#">
                                         <div class="row gy-4">
                                             <div class="col-md-12">
-                                                <div class="form-floating">
-                                                    <select class="form-select" name="choices-single-default" id="DestinationProject">
-                                                        <option selected>Select Project</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
+                                                <div class="form-floating custom-select-floating">
+                                                    <select class="form-control" data-choices name="choices-single-default" id="choices-single-default"
+                                                        data-placeholder="Select City">
+                                                        <option value="">This is a placeholder</option>
+                                                        <option value="Choice 1">Choice 1</option>
+                                                        <option value="Choice 2">Choice 2</option>
+                                                        <option value="Choice 3">Choice 3</option>
                                                     </select>
                                                     <label for="DestinationProject" class="form-label text-primary">Destination Project</label>
                                                 </div>
@@ -145,30 +149,18 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-header border-primary bg-primary bg-opacity-10">
-                                    <h4 class="card-title mb-0 text-primary">Source Project Details</h4>
+                                    <h4 class="card-title mb-0 text-primary">Project Scope Summary</h4>
                                 </div><!-- end card header -->
                                 <div class="card-body">
-                                    <form action="#">
+                                    <form class="needs-validation" novalidate>
                                         <div class="row gy-4">
-                                            <div class="col-xxl-4 col-md-6">
+                                            <div class="col-md-12">
                                                 <div class="form-floating">
-                                                    <input type="text" class="form-control" value="C-AIP-DEP-YY-XX" id="SourceProject">
-                                                    <label for="SourceProject" class="form-label text-primary">Source Project</label>
-                                                </div>
-                                            </div>
-                                            <!--end col-->
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" value="Type here " id="Title">
-                                                    <label for="Title" class="form-label text-primary">Title</label>
-                                                </div>
-                                            </div>
-                                            <!--end col-->
-
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="date" class="form-control" id="RequiredFinishDate">
-                                                    <label for="RequiredFinishDate" class="form-label text-primary">Required Finish Date</label>
+                                                    <input type="text" class="form-control" value="" placeholder="Project Scope Summary" id="SourceProject" required>
+                                                    <label for="SourceProject" class="form-label text-primary">Project Scope Summary</label>
+                                                    <div class="invalid-feedback">
+                                                        Please choose a username.
+                                                    </div>
                                                 </div>
                                             </div>
                                             <!--end col-->
@@ -215,6 +207,10 @@
 
                                                     </div>
                                                 </div>
+
+                                                <div class="col-12">
+                                                    <button class="btn btn-primary" type="submit">FORMS VALIDATION</button>
+                                                </div>
                                             </div><!--end col-->
 
                                         </div>
@@ -256,7 +252,7 @@
                                         <!-- Budget Details -->
                                         <div class="tab-pane active" id="navs-budget-details" role="tabpanel">
                                             <div class="row gy-4 mb-4">
-                                                <div class="col-xxl-3 col-md-6">
+                                                <div class="col-md-12">
                                                     <div class="form-floating">
                                                         <input type="text" class="form-control" value="Type here" id="BudgetRevisionNumber">
                                                         <label for="BudgetRevisionNumber" class="form-label text-primary">Budget Revision Number</label>
@@ -268,7 +264,7 @@
                                             <div class="row gy-4">
                                                 <div class="col-xxl-4 col-md-6">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" value="Type here " id="ExtraBudgetRequired">
+                                                        <input type="text" class="form-control" placeholder="Extra Budget Required (KD)" id="ExtraBudgetRequired">
                                                         <label for="ExtraBudgetRequired" class="form-label text-primary">Extra Budget Required (KD)</label>
                                                     </div>
                                                 </div>
@@ -276,7 +272,7 @@
 
                                                 <div class="col-xxl-4 col-md-6">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" value="Type here " id="ApprovedBudget">
+                                                        <input type="text" class="form-control" placeholder="Approved Budget (KD)" id="ApprovedBudget">
                                                         <label for="ApprovedBudget" class="form-label text-primary">Approved Budget (KD)</label>
                                                     </div>
                                                 </div>
@@ -415,7 +411,6 @@
 
                                                     </div>
                                                 </div>
-
                                             </div>
                                             <!-- end row -->
                                             <div class="row gy-2 gy-lg-4">
@@ -535,7 +530,12 @@
 
     <!-- Vector map-->
     <script src="assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
-    <script src="assets/libs/jsvectormap/maps/world-merc.js"></script>
+
+    <!-- prismjs plugin -->
+    <script src="assets/libs/prismjs/prism.js"></script>
+
+    <!-- validation -->
+    <script src="assets/js/pages/form-validation.init.js"></script>
 
     <!-- Dashboard init -->
     <script src="assets/js/pages/dashboard.init.js"></script>

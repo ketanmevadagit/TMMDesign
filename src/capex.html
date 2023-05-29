@@ -2,7 +2,10 @@
 
 <head>
 
-    @@include("partials/title-meta.html", {"title": "Initiate Request for Re-Allocation"})
+    @@include("partials/title-meta.html", {"title": "Initiate Request"})
+
+    <!-- plugin css -->
+    <link href="assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
 
     @@include("partials/head-css.html")
 
@@ -23,7 +26,46 @@
             <div class="page-content">
                 <div class="container-fluid">
 
-                    @@include("partials/page-title.html", {"pagetitle": "Re Allocation", "title": "Re Allocation"})
+                    @@include("partials/page-title.html", {"pagetitle": "Capex", "title": "Initiate Request"})
+
+                    <div class="row">
+                        <div class="col-sm-6 col-xxl-3">
+                            <div class="card-statistics d-flex mb-4">
+                                <span class="number d-block">48</span>
+                                <div>
+                                    <h5 class="d-block pb-3 mb-0">Total</h5>
+                                    <h2 class="d-block mb-0">KD. 100,000</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xxl-3">
+                            <div class="card-statistics d-flex mb-4">
+                                <span class="number d-block">48</span>
+                                <div>
+                                    <h5 class="d-block pb-3 mb-0">Engineering</h5>
+                                    <h2 class="d-block mb-0">KD. 100,000</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xxl-3">
+                            <div class="card-statistics d-flex mb-4">
+                                <span class="number d-block">48</span>
+                                <div>
+                                    <h5 class="d-block pb-3 mb-0">Non Engineering</h5>
+                                    <h2 class="d-block mb-0">KD. 100,000</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xxl-3">
+                            <div class="card-statistics d-flex mb-4 bg-red bg-img-none">
+                                <span class="number d-block mb-0">48</span>
+                                <div>
+                                    <h5 class="d-block pb-3 mb-0">Urgent Request</h5>
+                                    <h2 class="d-block mb-0">KD. 100,000</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="col-lg-12">
@@ -83,96 +125,29 @@
                         <!--end col-->
                     </div>
                     <!-- end row -->
-
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-header border-primary bg-primary bg-opacity-10">
-                                    <h4 class="card-title mb-0 text-primary">Destination Project Details</h4>
+                                    <h4 class="card-title mb-0 text-primary">Project Summary</h4>
                                 </div><!-- end card header -->
                                 <div class="card-body">
                                     <form action="#">
                                         <div class="row gy-4">
-                                            <div class="col-md-12">
+                                            <div class="col-md-6">
                                                 <div class="form-floating">
-                                                    <select class="form-select" name="choices-single-default" id="DestinationProject">
-                                                        <option selected>Select Project</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                    <label for="DestinationProject" class="form-label text-primary">Destination Project</label>
+                                                    <input type="text" class="form-control" value="C-AIP-DEP-YY-XX" id="VariationTitle">
+                                                    <label for="VariationTitle" class="form-label text-primary">Variation Title</label>
                                                 </div>
                                             </div>
                                             <!--end col-->
-                                            <div class="col-xxl-4 col-md-6">
+                                            <div class="col-md-6">
                                                 <div class="form-floating">
-                                                    <input type="text" class="form-control" value="100,000" id="ApprovedBudget">
-                                                    <label for="ApprovedBudget" class="form-label text-primary">Approved Budget KD</label>
+                                                    <input type="date" class="form-control" id="RequiredFinish">
+                                                    <label for="RequiredFinish" class="form-label text-primary">Required Finish Date</label>
                                                 </div>
                                             </div>
                                             <!--end col-->
-
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" value="50,000" id="Un-Utilized">
-                                                    <label for="Un-Utilized" class="form-label text-primary">Un-Utilized Amount:</label>
-                                                </div>
-                                            </div>
-                                            <!--end col-->
-
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" value="10,000" id="BalanceRe-Allocation">
-                                                    <label for="BalanceRe-Allocation" class="form-label text-primary">Balance after Re-Allocation KD:</label>
-                                                </div>
-                                            </div>
-                                            <!--end col-->
-
-
-                                        </div>
-                                    </form>
-                                    <!--end row-->
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--end col-->
-                    </div>
-                    <!--end row-->
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-header border-primary bg-primary bg-opacity-10">
-                                    <h4 class="card-title mb-0 text-primary">Source Project Details</h4>
-                                </div><!-- end card header -->
-                                <div class="card-body">
-                                    <form action="#">
-                                        <div class="row gy-4">
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" value="C-AIP-DEP-YY-XX" id="SourceProject">
-                                                    <label for="SourceProject" class="form-label text-primary">Source Project</label>
-                                                </div>
-                                            </div>
-                                            <!--end col-->
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" value="Type here " id="Title">
-                                                    <label for="Title" class="form-label text-primary">Title</label>
-                                                </div>
-                                            </div>
-                                            <!--end col-->
-
-                                            <div class="col-xxl-4 col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="date" class="form-control" id="RequiredFinishDate">
-                                                    <label for="RequiredFinishDate" class="form-label text-primary">Required Finish Date</label>
-                                                </div>
-                                            </div>
-                                            <!--end col-->
-
                                             <div class="col-md-6">
                                                 <div class="form-floating">
                                                     <textarea class="form-control" id="Justifictaion" rows="3"></textarea>
@@ -246,6 +221,9 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" data-bs-toggle="tab" href="#navs-finance-evaluation" role="tab">Finance Evaluation</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#navs-approvals" role="tab">Approvals</a>
                                         </li>
                                     </ul>
                                 </div><!-- Tab panes -->
@@ -389,7 +367,6 @@
                                         </div>
 
                                         <!-- Attachments -->
-
                                         <div class="tab-pane" id="navs-attachments" role="tabpanel">
                                             <div class="row gy-2 gy-lg-4">
                                                 <div class="col-lg-auto">
@@ -493,6 +470,169 @@
                                             Finance Evaluation
                                         </div>
 
+                                        <!-- Approvals -->
+                                        <div class="tab-pane" id="navs-approvals" role="tabpanel">
+                                            <h4 class="fs-18 text-primary mb-3">Initiator Dept Leader Approval</h4>
+                                            <div class="row gy-4 mb-4">
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" value="Type here" id="ApproverName">
+                                                        <label for="ApproverName" class="form-label text-primary">Approver Name</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" value="Type here" id="Title">
+                                                        <label for="Title" class="form-label text-primary">Title</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="Date">
+                                                        <label for="Date" class="form-label text-primary">Date</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-12">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="ExplainImpact" rows="3"></textarea>
+                                                        <label for="ExplainImpact" class="form-label text-primary">Explain Impact</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end row-->
+
+                                            <h4 class="fs-18 text-primary mb-3">Initiator Function VP Approval</h4>
+                                            <div class="row gy-4 mb-4">
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" value="Type here" id="ApproverName">
+                                                        <label for="ApproverName" class="form-label text-primary">Approver Name</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" value="Type here" id="Title">
+                                                        <label for="Title" class="form-label text-primary">Title</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="Date">
+                                                        <label for="Date" class="form-label text-primary">Date</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-12">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="ExplainImpact" rows="3"></textarea>
+                                                        <label for="ExplainImpact" class="form-label text-primary">Explain Impact</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end row-->
+
+                                            <h4 class="fs-18 text-primary mb-3">Capex Committee</h4>
+                                            <div class="row gy-4 mb-4">
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" value="Type here" id="ApproverName">
+                                                        <label for="ApproverName" class="form-label text-primary">Approver Name</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" value="Type here" id="Title">
+                                                        <label for="Title" class="form-label text-primary">Title</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="Date">
+                                                        <label for="Date" class="form-label text-primary">Date</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-12">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="ExplainImpact" rows="3"></textarea>
+                                                        <label for="ExplainImpact" class="form-label text-primary">Explain Impact</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end row-->
+
+                                            <h4 class="fs-18 text-primary mb-3">CEO</h4>
+                                            <div class="row gy-4 mb-4">
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" value="Type here" id="ApproverName">
+                                                        <label for="ApproverName" class="form-label text-primary">Approver Name</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" value="Type here" id="Title">
+                                                        <label for="Title" class="form-label text-primary">Title</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="Date">
+                                                        <label for="Date" class="form-label text-primary">Date</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-12">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="ExplainImpact" rows="3"></textarea>
+                                                        <label for="ExplainImpact" class="form-label text-primary">Explain Impact</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end row-->
+
+                                            <h4 class="fs-18 text-primary mb-3">BOD Chairman</h4>
+                                            <div class="row gy-4 mb-4">
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" value="Type here" id="ApproverName">
+                                                        <label for="ApproverName" class="form-label text-primary">Approver Name</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" value="Type here" id="Title">
+                                                        <label for="Title" class="form-label text-primary">Title</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-xxl-4 col-md-6">
+                                                    <div class="form-floating">
+                                                        <input type="date" class="form-control" id="Date">
+                                                        <label for="Date" class="form-label text-primary">Date</label>
+                                                    </div>
+                                                </div>
+                                                <!--end col-->
+                                                <div class="col-md-12">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="ExplainImpact" rows="3"></textarea>
+                                                        <label for="ExplainImpact" class="form-label text-primary">Explain Impact</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end row-->
+                                        </div>
+
                                     </div>
                                 </div><!-- end card-body -->
                             </div><!-- end card -->
@@ -504,10 +644,10 @@
 
                     <div class="row mt-2 justify-content-end">
                         <div class="col-auto">
-                            <a href="#" class="btn btn-primary w-100">Submit</a>
+                            <a href="#" class="btn btn-primary w-100">Approve</a>
                         </div>
                         <div class="col-auto">
-                            <a href="#" class="btn btn-soft-primary w-100">Re-Submit </a>
+                            <a href="#" class="btn btn-soft-primary w-100">Reject </a>
                         </div>
                         <div class="col-auto">
                             <a href="#" class="btn btn-soft-dark w-100">Cancel</a>

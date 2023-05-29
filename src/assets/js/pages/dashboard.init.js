@@ -102,6 +102,28 @@ if (vectorMapWorldLineColors) {
     chart.render();
 }
 
+// mini4
+var vectorMapWorldLineColors = getChartColorsArray("mini-chart4");
+if (vectorMapWorldLineColors) {
+    var options = {
+        series: [80, 40],
+        chart: {
+            type: 'donut',
+            height: 110,
+        },
+        colors: vectorMapWorldLineColors,
+        legend: {
+            show: false
+        },
+        dataLabels: {
+            enabled: false
+        }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#mini-chart4"), options);
+    chart.render();
+}
+
 
 // stacked column chart
 var linechartBasicColors = getChartColorsArray("stacked-column-chart");

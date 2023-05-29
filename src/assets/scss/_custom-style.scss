@@ -17,7 +17,58 @@
     background: #555;
 }
 
+.form-control.is-valid,
+.was-validated .form-control:valid {
+    border-color: $indigo;
+}
+
+.form-check-input.is-valid~.form-check-label,
+.was-validated .form-check-input:valid~.form-check-label {
+    color: $indigo;
+}
 
 .min-w-124 {
     min-width: 123px;
+}
+
+// custom-select
+.custom-select-floating {
+    .form-label {
+        opacity: .65;
+        -webkit-transform: scale(.85) translateY(-0.5rem) translateX(0.15rem);
+        transform: scale(.85) translateY(-0.5rem) translateX(0.15rem rem);
+    }
+}
+
+.form-floating {
+    .choices {
+        margin-bottom: 0;
+
+        .choices__inner {
+            min-height: calc(3.5rem + 2px);
+            padding-top: 21px;
+        }
+
+        .choices__list--single {
+            .choices__placeholder {
+                opacity: 0.5;
+            }
+
+            .choices__item {
+                font-family: $input-font-family;
+                @include font-size($input-font-size);
+                font-weight: $input-font-weight;
+                line-height: $input-line-height;
+                color: $input-color;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .w-200 {
+        min-width: 200px;
+    }
+
 }

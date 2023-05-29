@@ -4,8 +4,6 @@
 
     @@include("partials/title-meta.html", {"title": "Initiate Request"})
 
-    <!-- plugin css -->
-    <link href="assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
 
     @@include("partials/head-css.html")
 
@@ -31,31 +29,34 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card">
-                                <div class="card-header border-primary bg-primary bg-opacity-10">
-                                    <h4 class="card-title mb-0 text-primary">Initiator Details</h4>
-                                </div><!-- end card header -->
+                                <div class="card-header d-md-flex justify-content-between border-primary bg-primary bg-opacity-10">
+                                    <h3 class="card-title mb-2 mb-md-0 text-primary">Initiator Details</h3>
+
+                                    <h5 class="fs-14 mb-0 text-primary">RFP # PD-20230510-001</h5>
+                                </div>
+                                <!-- end card header -->
                                 <div class="card-body">
 
                                     <div class="row g-4">
-                                        <div class="col-xxl-4 col-md-6">
+                                        <div class="col-xxl-4 col-md-4">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="Name" value="Fida Hussain" disabled>
-                                                <label for="Name" class="form-label text-primary">Name of logged in user</label>
+                                                <label for="Name" class="form-label text-primary">Name of Requester</label>
                                             </div>
                                         </div>
                                         <!--end col-->
-                                        <div class="col-xxl-4 col-md-6">
+                                        <div class="col-xxl-4 col-md-4">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="Operations" value="Operations" disabled>
-                                                <label for="Operations" class="form-label text-primary">Department name of logged in user</label>
+                                                <label for="Operations" class="form-label text-primary">Department</label>
                                             </div>
                                         </div>
                                         <!--end col-->
 
-                                        <div class="col-xxl-4 col-md-6">
+                                        <div class="col-xxl-4 col-md-4">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="EmployeeNumber" value="123" disabled>
-                                                <label for="EmployeeNumber" class="form-label text-primary">Employee number of logged in user</label>
+                                                <label for="EmployeeNumber" class="form-label text-primary">Employee Number</label>
                                             </div>
                                         </div>
                                         <!--end col-->
@@ -76,36 +77,36 @@
                                 <div class="card-body">
                                     <form action="#">
                                         <div class="row gy-4">
-                                            <div class="col-md-6">
+                                            <div class="col-md-8">
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control" id="ProjectTitle" placeholder="Project Title">
                                                     <label for="ProjectTitle" class="form-label text-primary">Project Title</label>
                                                 </div>
                                             </div>
                                             <!--end col-->
-                                            <div class="col-md-6">
+                                            <div class="col-md-4">
                                                 <div class="form-floating">
                                                     <input type="date" class="form-control" id="RequiredFinishDate">
-                                                    <label for="RequiredFinishDate" class="form-label text-primary">Required Finish Date</label>
+                                                    <label for="RequiredFinishDate" class="form-label text-primary">Finish Date</label>
                                                 </div>
                                             </div>
                                             <!--end col-->
-                                            <div class="col-md-6">
+                                            <div class="col-md-4">
                                                 <div class="form-floating">
                                                     <select class="form-select" name="choices-single-default" id="choices-single-default">
-                                                        <option selected>Open this select menu</option>
+                                                        <option selected>Select Area</option>
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
                                                         <option value="3">Three</option>
                                                     </select>
-                                                    <label for="Area" class="form-label text-primary">choices-single-default</label>
+                                                    <label for="Area" class="form-label text-primary">Area</label>
                                                 </div>
                                             </div>
                                             <!--end col-->
-                                            <div class="col-md-6">
+                                            <div class="col-md-4">
                                                 <div class="form-floating">
                                                     <select class="form-select" name="choices-project" id="choices-project">
-                                                        <option selected>Open this select menu</option>
+                                                        <option selected>Select Project</option>
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
                                                         <option value="3">Three</option>
@@ -115,9 +116,46 @@
 
                                             </div>
                                             <!--end col-->
-                                            <div class="col-md-6">
+
+                                            <div class="col-md-4">
+                                                <div class="form-floating">
+                                                    <select class="form-select mb-3" name="choices-single-default" id="ActionRequired">
+                                                        <option selected>Select Action Required</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="ActionRequired" class="form-label text-primary">Action Required</label>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-md-4">
+                                                <div class="form-floating">
+                                                    <select class="form-select mb-3" name="choices-single-default" id="ExecutingDepartment">
+                                                        <option selected>Select Department</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="ExecutingDepartment" class="form-label text-primary">Executing Department</label>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-md-4">
+                                                <div class="form-floating">
+                                                    <select class="form-select mb-3" name="choices-single-default" id="BusinessDrivers">
+                                                        <option selected>Select Business Drivers</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="BusinessDrivers" class="form-label text-primary">Business Drivers</label>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-md-4">
                                                 <div>
-                                                    <label for="readonlyPlaintext" class="form-label text-primary">Readonly Plain Text Input</label>
+                                                    <label for="readonlyPlaintext" class="form-label text-primary">Request Engineering Solution</label>
                                                     <div>
                                                         <div class="form-check form-check-inline">
                                                             <input class="form-check-input" type="radio" name="ReadonlyPlain" id="inlineRadio1" value="option1">
@@ -131,43 +169,6 @@
                                                 </div>
                                             </div>
                                             <!--end col-->
-                                            <div class="col-md-6">
-                                                <div class="form-floating">
-                                                    <select class="form-select mb-3" name="choices-single-default" id="ActionRequired">
-                                                        <option selected>Open this select menu</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                    <label for="ActionRequired" class="form-label text-primary">Action Required</label>
-                                                </div>
-                                            </div>
-                                            <!--end col-->
-                                            <div class="col-md-6">
-                                                <div class="form-floating">
-                                                    <select class="form-select mb-3" name="choices-single-default" id="ExecutingDepartment">
-                                                        <option selected>Open this select menu</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                    <label for="ExecutingDepartment" class="form-label text-primary">Executing Department</label>
-                                                </div>
-                                            </div>
-                                            <!--end col-->
-                                            <div class="col-md-6">
-                                                <div class="form-floating">
-                                                    <select class="form-select mb-3" name="choices-single-default" id="BusinessDrivers">
-                                                        <option selected>Open this select menu</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                    <label for="BusinessDrivers" class="form-label text-primary">Business Drivers</label>
-                                                </div>
-                                            </div>
-                                            <!--end col-->
-
                                         </div>
                                     </form>
                                     <!--end row-->
@@ -237,45 +238,21 @@
                                                         <label for="exampleFormControlTextarea5" class="form-label text-primary">Justification and Consequences</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <div>
-                                                        <h4 class="fs-18 text-primary mb-3">File Type:</h4>
 
-                                                        <div>
-                                                            <div class="form-check mb-2 form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="formCheck01">
-                                                                <label class="form-check-label" for="formCheck01">
-                                                                    P&ID
-                                                                </label>
-                                                            </div>
-                                                            <div class="form-check mb-2 form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="formCheck02">
-                                                                <label class="form-check-label" for="formCheck02">
-                                                                    Technical Document
-                                                                </label>
-                                                            </div>
-                                                            <div class="form-check mb-2 form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="formCheck03">
-                                                                <label class="form-check-label" for="formCheck03">
-                                                                    Offers / Quotations
-                                                                </label>
-                                                            </div>
-                                                            <div class="form-check mb-2 form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="formCheck04">
-                                                                <label class="form-check-label" for="formCheck04">
-                                                                    Drawings / Layout
-                                                                </label>
-                                                            </div>
-                                                            <div class="form-check mb-2 form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="formCheck05">
-                                                                <label class="form-check-label" for="formCheck05">
-                                                                    Others
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <div class="col-md-4">
+                                                    <label for="ActionRequired" class="form-label text-primary">File Type</label>
+
+                                                    <select class="form-select mb-3" name="choices-single-default" id="ExecutingDepartment">
+                                                        <option selected>Select File Type</option>
+                                                        <option value="1">P&ID</option>
+                                                        <option value="2">Technical Document</option>
+                                                        <option value="3">Offers / Quotations</option>
+                                                        <option value="4">Drawings / Layout</option>
+                                                        <option value="5">Others</option>
+                                                    </select>
+
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-8">
                                                     <div>
                                                         <label for="formFile" class="form-labe text-primary">Upload Attachment</label>
                                                         <input class="form-control" type="file" id="formFile" multiple>
@@ -284,7 +261,8 @@
                                                 <div class="col-md-12">
                                                     <ul class="list-unstyled mb-0 d-flex flex-wrap">
 
-                                                        <li class="mt-2 dz-processing dz-image-preview me-2"> <!-- This is used as the file preview template -->
+                                                        <li class="mt-2 dz-processing dz-image-preview me-2">
+                                                            <!-- This is used as the file preview template -->
                                                             <div class="border rounded">
                                                                 <div class="d-flex p-2">
                                                                     <div class="flex-shrink-0 me-3">
@@ -299,12 +277,14 @@
                                                                                 class="error text-danger" data-dz-errormessage=""></strong>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="flex-shrink-0 ms-3"> <button data-dz-remove="" class="btn btn-sm btn-danger">Delete</button>
+                                                                    <div class="flex-shrink-0 ms-3">
+                                                                        <button data-dz-remove="" class="btn btn-sm btn-danger">Delete</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <li class="mt-2 dz-processing dz-image-preview me-2"> <!-- This is used as the file preview template -->
+                                                        <li class="mt-2 dz-processing dz-image-preview me-2">
+                                                            <!-- This is used as the file preview template -->
                                                             <div class="border rounded">
                                                                 <div class="d-flex p-2">
                                                                     <div class="flex-shrink-0 me-3">
@@ -319,12 +299,14 @@
                                                                                 class="error text-danger" data-dz-errormessage=""></strong>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="flex-shrink-0 ms-3"> <button data-dz-remove="" class="btn btn-sm btn-danger">Delete</button>
+                                                                    <div class="flex-shrink-0 ms-3">
+                                                                        <button data-dz-remove="" class="btn btn-sm btn-danger">Delete</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <li class="mt-2 me-2 dz-processing dz-image-preview"> <!-- This is used as the file preview template -->
+                                                        <li class="mt-2 me-2 dz-processing dz-image-preview">
+                                                            <!-- This is used as the file preview template -->
                                                             <div class="border rounded">
                                                                 <div class="d-flex p-2">
                                                                     <div class="flex-shrink-0 me-3">
@@ -339,7 +321,8 @@
                                                                                 class="error text-danger" data-dz-errormessage=""></strong>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="flex-shrink-0 ms-3"> <button data-dz-remove="" class="btn btn-sm btn-danger">Delete</button>
+                                                                    <div class="flex-shrink-0 ms-3">
+                                                                        <button data-dz-remove="" class="btn btn-sm btn-danger">Delete</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -851,13 +834,13 @@
                                         <!-- Planned Cashflow -->
                                         <div class="tab-pane" id="navs-planned-cashflow" role="tabpanel">
                                             <div class="row gy-4 mb-3">
-                                                <div class="col-md">
+                                                <div class="col-xxl-3 col-md">
                                                     <div class="form-floating">
                                                         <input type="text" class="form-control" id="Amount" placeholder="Type here">
                                                         <label for="Amount" class="form-label text-primary">Amount</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md">
+                                                <div class="col-xxl-3 col-md">
                                                     <div class="form-floating">
                                                         <input type="date" class="form-control" id="ExpectedDate">
                                                         <label for="ExpectedDate" class="form-label text-primary">Expected Date</label>
@@ -871,13 +854,13 @@
                                                 </div>
                                             </div>
                                             <div class="row gy-4 mb-3">
-                                                <div class="col-md">
+                                                <div class="col-xxl-3 col-md">
                                                     <div class="form-floating">
                                                         <input type="text" class="form-control" id="Amount" placeholder="Type here">
                                                         <label for="Amount" class="form-label text-primary">Amount</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md">
+                                                <div class="col-xxl-3 col-md">
                                                     <div class="form-floating">
                                                         <input type="date" class="form-control" id="ExpectedDate">
                                                         <label for="ExpectedDate" class="form-label text-primary">Expected Date</label>
@@ -890,13 +873,13 @@
                                                 </div>
                                             </div>
                                             <div class="row gy-4 mb-3">
-                                                <div class="col-md">
+                                                <div class="col-xxl-3 col-md">
                                                     <div class="form-floating">
                                                         <input type="text" class="form-control" id="Amount" placeholder="Type here">
                                                         <label for="Amount" class="form-label text-primary">Amount</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-md">
+                                                <div class="col-xxl-3 col-md">
                                                     <div class="form-floating">
                                                         <input type="date" class="form-control" id="ExpectedDate">
                                                         <label for="ExpectedDate" class="form-label text-primary">Expected Date</label>
@@ -913,111 +896,109 @@
 
                                         <!-- Cost Element -->
                                         <div class="tab-pane" id="navs-cost-element" role="tabpanel">
-                                            <div class="table-responsive table-card">
-                                                <table class="table table-striped table-bordered">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Cost Elements</th>
-                                                            <th scope="col">Brief Description</th>
-                                                            <th scope="col">Estimated Budget (KD)</th>
-                                                            <th scope="col">Actions</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th>Material</th>
-                                                            <td>Implement new UX</td>
-                                                            <td>1,000</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
-                                                                    </a>
+                                            <table class="table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Cost Elements</th>
+                                                        <th scope="col">Brief Description</th>
+                                                        <th scope="col">Estimated Budget (KD)</th>
+                                                        <th scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Material</th>
+                                                        <td>Implement new UX</td>
+                                                        <td>1,000</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="ri-more-2-fill"></i>
+                                                                </a>
 
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                        <li><a class="dropdown-item" href="#">View</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Construction and Services</th>
-                                                            <td>Implement new UX</td>
-                                                            <td>2,000</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
-                                                                    </a>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Construction and Services</th>
+                                                        <td>Implement new UX</td>
+                                                        <td>2,000</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="ri-more-2-fill"></i>
+                                                                </a>
 
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                        <li><a class="dropdown-item" href="#">View</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Consultancy (if applicable)</th>
-                                                            <td>Implement new UX</td>
-                                                            <td>5,000</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
-                                                                    </a>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Consultancy (if applicable)</th>
+                                                        <td>Implement new UX</td>
+                                                        <td>5,000</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="ri-more-2-fill"></i>
+                                                                </a>
 
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                        <li><a class="dropdown-item" href="#">View</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Travel Expenses (if applicable)</th>
-                                                            <td>Implement new UX</td>
-                                                            <td>1,000</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
-                                                                    </a>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Travel Expenses (if applicable)</th>
+                                                        <td>Implement new UX</td>
+                                                        <td>1,000</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="ri-more-2-fill"></i>
+                                                                </a>
 
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                        <li><a class="dropdown-item" href="#">View</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th>Contingency (10%)</th>
-                                                            <td>Implement new UX</td>
-                                                            <td>500</td>
-                                                            <td>
-                                                                <div class="dropdown">
-                                                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                        <i class="ri-more-2-fill"></i>
-                                                                    </a>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Contingency (10%)</th>
+                                                        <td>Implement new UX</td>
+                                                        <td>500</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <i class="ri-more-2-fill"></i>
+                                                                </a>
 
-                                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                                        <li><a class="dropdown-item" href="#">View</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                                        <li><a class="dropdown-item" href="#">Delete</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
+                                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">View</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
 
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                </tbody>
+                                            </table>
                                             <div class="row gy-4">
                                                 <div class="col-md-6">
                                                     <div>
@@ -1110,8 +1091,6 @@
                                     </div>
                                 </div><!-- end card-body -->
                             </div><!-- end card -->
-
-
                         </div>
                     </div>
                     <!--end col-->
@@ -1127,16 +1106,15 @@
                             <a href="#" class="btn btn-soft-dark w-100">Cancel</a>
                         </div>
                     </div>
+                    <!-- end row -->
+
                 </div>
-                <!-- end row -->
-
+                <!-- container-fluid -->
             </div>
-            <!-- container-fluid -->
-        </div>
-        <!-- End Page-content -->
+            <!-- End Page-content -->
 
-    </div>
-    <!-- end main content-->
+        </div>
+        <!-- end main content-->
 
     </div>
     <!-- END layout-wrapper -->

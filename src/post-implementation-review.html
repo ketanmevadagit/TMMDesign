@@ -1,0 +1,313 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Post Implementation Review"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+<body data-topbar="light" data-layout="horizontal">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        @@include("partials/menu.html")
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    @@include("partials/page-title.html", {"pagetitle": "Post Implementation Review", "title": "Post Implementation Review"})
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header d-md-flex justify-content-between border-primary bg-primary bg-opacity-10">
+                                    <h3 class="card-title mb-2 mb-md-0 text-primary">Initiator Details</h3>
+                                    <h5 class="fs-14 mb-0 text-primary">RFP # PD-20230510-001</h5>
+                                </div><!-- end card header -->
+                                <div class="card-body">
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="Name" value="Fida Hussain">
+                                                <label for="Name" class="form-label text-primary">Name</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="Operations" value="Operations">
+                                                <label for="Operations" class="form-label text-primary">Department</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="EmployeeNumber" value="123">
+                                                <label for="EmployeeNumber" class="form-label text-primary">Employee number</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+
+                                        <div class="col-md-6">
+                                            <div class="form-floating custom-select-floating">
+                                                <select class="form-select" name="choices-single-default" id="Area">
+                                                    <option selected>select Area (will only show Areas as per selected Dept)</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <label for="Area" class="form-label text-primary">Area</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input type="date" class="form-control" value=" 01/18/2023" id="Capex">
+                                                <label for="Capex" class="form-label text-primary">Financial Year</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header border-primary bg-primary bg-opacity-10">
+                                    <h4 class="card-title mb-0 text-primary">Project Summary</h4>
+                                </div><!-- end card header -->
+                                <div class="card-body">
+                                    <form action="#">
+                                        <div class="row gy-4">
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" value="" placeholder="Project Scope Summary" id="SourceProject" required>
+                                                    <label for="SourceProject" class="form-label text-primary">Project Scope Summary</label>
+                                                    <div class="invalid-feedback">
+                                                        Please choose a username.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input type="date" class="form-control" value=" 01/18/2023" id="Capex">
+                                                    <label for="Capex" class="form-label text-primary">Financial Year</label>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-md-6">
+                                                <div>
+                                                    <h4 class="fs-16 text-primary mb-3">Project Planned Scope Fully Executed</h4>
+
+                                                    <div>
+                                                        <div class="form-check mb-2 form-check-inline">
+                                                            <input class="form-check-input" type="radio" id="yes">
+                                                            <label class="form-check-label" for="yes">
+                                                                yes
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mb-2 form-check-inline">
+                                                            <input class="form-check-input" type="radio" id="no">
+                                                            <label class="form-check-label" for="no">
+                                                                No
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control" id="Justifictaion" rows="3"></textarea>
+                                                    <label for="Justifictaion" class="form-label text-primary">Comments</label>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+                                            <hr>
+
+                                            <div class="col-md-6">
+                                                <h4 class="fs-16 text-primary mb-3">Project Planned Scope Fully Executed</h4>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        Send the billing agreement <span class="badge badge-soft-primary">yes</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        Meeting with daron to review the intake form <span class="badge badge-soft-danger">No</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        Check uikings theme and give customer support <span class="badge badge-soft-dark">Not Applicable</span>
+                                                    </li>
+                                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                        Start making a presentation <span class="badge badge-soft-primary">yes</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--end col-->
+
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-4">
+                                                    <input type="date" class="form-control" value=" 01/18/2023" id="Capex">
+                                                    <label for="Un-Utilized" class="form-label text-primary">Planned Start date</label>
+                                                </div>
+                                                <div class="form-floating mb-4">
+                                                    <input type="date" class="form-control" value=" 01/18/2023" id="Capex">
+                                                    <label for="Un-Utilized" class="form-label text-primary">Planned Finish date</label>
+                                                </div>
+                                                <div class="form-floating mb-4">
+                                                    <input type="date" class="form-control" value=" 01/18/2023" id="Capex">
+                                                    <label for="Un-Utilized" class="form-label text-primary">Approved Budget</label>
+                                                </div>
+                                            </div>
+                                            <!--end col-->
+
+                                        </div>
+                                    </form>
+                                    <!--end row-->
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header border-primary bg-primary bg-opacity-10">
+                                    <h4 class="card-title mb-0 text-primary">Project Deliverables</h4>
+                                </div><!-- end card header -->
+                                <div class="card-body">
+                                    <div class="row gy-4">
+                                        <div class="col-md-12">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" id="ExplainImpact" rows="3"></textarea>
+                                                <label for="ExplainImpact" class="form-label text-primary">Project Scope Summary</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+
+                                        <div class="col-md-12">
+                                            <div class="table-responsive w-100">
+                                                <table class="table table-striped table-bordered mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Planned</th>
+                                                            <th scope="col">Actual</th>
+                                                            <th scope="col">Commens</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>AIP-01234</th>
+                                                            <td>Ada Lovelace</td>
+                                                            <td>One morning, when Gregor Samsa woke from troubled dreams,</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>AIP-01234</th>
+                                                            <td>Ada Lovelace</td>
+                                                            <td>One morning, when Gregor Samsa woke from troubled dreams,</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>AIP-01234</th>
+                                                            <td>Ada Lovelace</td>
+                                                            <td>One morning, when Gregor Samsa woke from troubled dreams,</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>AIP-01234</th>
+                                                            <td>Ada Lovelace</td>
+                                                            <td>One morning, when Gregor Samsa woke from troubled dreams,</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" id="ExplainImpact" rows="3"></textarea>
+                                                <label for="ExplainImpact" class="form-label text-primary">Validation of Project Justification</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" id="ExplainImpact" rows="3"></textarea>
+                                                <label for="ExplainImpact" class="form-label text-primary">Lessons Learned / Recomendations</label>
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+
+                    <div class="row mt-2 justify-content-end">
+                        <div class="col-auto">
+                            <a href="#" class="btn btn-primary w-100">Submit</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="btn btn-soft-primary w-100">View Approval Log</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="btn btn-soft-dark w-100">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+    </div>
+    <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+    @@include("partials/vendor-scripts.html")
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Vector map-->
+    <script src="assets/libs/jsvectormap/js/jsvectormap.min.js"></script>
+    <script src="assets/libs/jsvectormap/maps/world-merc.js"></script>
+
+    <!-- prismjs plugin -->
+    <script src="assets/libs/prismjs/prism.js"></script>
+
+    <!-- validation -->
+    <script src="assets/js/pages/form-validation.init.js"></script>
+
+    <!-- Dashboard init -->
+    <script src="assets/js/pages/dashboard.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
